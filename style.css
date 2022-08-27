@@ -1,0 +1,144 @@
+body {
+    font-family: monospace;
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* The Season Race selection */
+.leftbar {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+    width: 50%;
+    text-decoration: none;
+    background-color: #e10600;
+}
+
+/* The Latest race Button */
+.rightbar {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: right;
+    width: 50%;
+    text-decoration: none;
+    background-color: #e10600;
+}
+
+.race {
+    width: 192px;
+}
+
+/* buttons */
+.showrace  {
+    font-size: 16px;
+    border: none;
+    border-left:#eee 1px solid;
+    border-right: #eee 1px solid;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer
+}
+
+.latestRace  {
+    font-size: 16px;
+    border: none;
+    border-left:#eee 1px solid;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer
+}
+
+/* Add a red background color to buttons on hover */
+.showrace:hover, .latestRace:hover {
+    background-color: #eee;
+    color: #000000;
+}
+
+/* Container for Race heading and link */
+.raceheading {
+    text-align: center;
+    margin: 18px auto;
+}
+
+.raceheading h1 {
+    display: inline;
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.raceheading img {
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 16px;
+    vertical-align: text-bottom;
+}
+
+/* container for the track, cars and finish line */
+#content {
+    display: flex;
+}
+
+.raceTrack {
+    width: 100%;
+    height: 720px;
+    float: left;
+    background-color: #666460;
+}
+
+/* .finishline {
+    width: 15px;
+} */
+
+.cars {
+    display: block;
+    position: absolute;
+    left: 0px;
+    transition: 250ms;
+}
+
+.cars p {
+    display: inline;
+    margin: auto;
+    font-size: 14px;
+    color: #000000;
+    position: absolute;
+    white-space: nowrap;
+}
+
+/* container for controls. Play, Pause and Replay */
+.controls {
+    margin: 16px auto;
+    text-align: center;
+    position: relative;
+}
+
+#replay {
+    display: none;
+    cursor: pointer;
+}
+#pause {
+    display: none;
+    cursor: pointer;
+}
+#play {
+    display: inline;
+    cursor: pointer;
+}
+
+.break{
+    clear: both;
+}
+

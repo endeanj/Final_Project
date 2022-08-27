@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="topmenu">
+        <header>
+          <div class="leftbar">
+            <form name="selection" id="selection">
+              Season:
+              <select name="season" id="season" class="season">
+                <option value="current" selected="selected">Select a Season</option>
+              </select>
+              Race:
+              <select name="race" id="race" class="race">
+                <option value="last" selected="selected">Select a season first</option>
+              </select>
+              <button class="showrace">Show Race</button>
+            </form>
+          </div>
+          <div class="rightbar">
+            <div class="rightbarbtn">
+              <button class="latestRace">Latest Race</button>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="break"></div>
+      <div class="raceheading">
+        <h1>Loading Season and Race...</h1>
+        <a href="" target="_blank">
+          <img src="images/Wikipedia64.png" alt="Wikipedia" />
+        </a>
+      </div>
+      <div class="break"></div>
+      <div id="content">
+        <div class="raceTrack">
+          <!-- Sample HTML for the racecars. Dynamiclly added by javascrip
+            <img id="russell" src="images/racing-car.png" alt="racing-car"/> -->
+        </div>
+        <div class="finishline">
+          <img src="images/finish.png" alt="Finish LIne" />
+        </div>
+      </div>
+      <div class="break"></div>
+      <div id="racecontrols">
+        <div class="controls">
+          <img id="replay" src="images/icons8-replay-64.png" alt="Replay" />
+          <img id="pause" src="images/icons8-pause-64.png" alt="Pause" />
+          <img id="play" src="images/icons8-play-64.png" alt="play" />
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
